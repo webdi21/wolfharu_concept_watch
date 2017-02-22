@@ -5,7 +5,7 @@ $(function() {
 	tempHtml += '	<div class="WolfharuWatchContent">';
 	tempHtml += '		<strong class="hourHand"><i></i></strong>';
 	tempHtml += '		<em class="minuteHand"><i></i></em>';
-	tempHtml += '		<span class="watchText"><em></em> <em></em><i>:</i><em></em><i>:</i><em></em></span>';
+	//tempHtml += '		<span class="watchText"><em></em> <em></em><i>:</i><em></em><i>:</i><em></em></span>';
 	tempHtml += '		<span class="hourLine"><i></i></span><span class="hourLine"><i></i></span><span class="hourLine"><i></i></span><span class="hourLine"><i></i></span>';
 	tempHtml += '	</div>';
 	tempHtml += '</div>';
@@ -13,7 +13,7 @@ $(function() {
 	$el.append(tempHtml);
 	$hourHand = $el.find('strong.hourHand');
 	$minuteHand = $el.find('em.minuteHand');
-	$watchText = $el.find('span.watchText > em');
+	//$watchText = $el.find('span.watchText > em');
 	
 	function fnWolfharuWatch() {
 		var currentTime = new Date();
@@ -48,12 +48,10 @@ $(function() {
 			nownum.seconds = '0'+nownum.seconds;
 		}
 		
-		console.log(nownum.division, nownum.hours, nownum.minutes, nownum.seconds);
-		
-		$watchText.eq(0).text(nownum.division);
-		$watchText.eq(1).text(nownum.hours);
-		$watchText.eq(2).text(nownum.minutes);
-		$watchText.eq(3).text(nownum.seconds);
+		//$watchText.eq(0).text(nownum.division);
+		//$watchText.eq(1).text(nownum.hours);
+		//$watchText.eq(2).text(nownum.minutes);
+		//$watchText.eq(3).text(nownum.seconds);
 
 		$hourHand.css({'transform':'rotate('+angel.hours+'deg)'});
 		$minuteHand.css({'transform':'rotate('+angel.minutes+'deg)'});
