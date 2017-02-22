@@ -5,6 +5,7 @@ $(function() {
 	tempHtml += '	<div class="WolfharuWatchContent">';
 	tempHtml += '		<strong><i></i></strong>';
 	tempHtml += '		<em><i></i></em>';
+	tempHtml += '		<span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span>';
 	tempHtml += '	</div>';
 	tempHtml += '</div>';
 	
