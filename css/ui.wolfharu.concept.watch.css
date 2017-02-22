@@ -6,9 +6,9 @@
 * Created   : 2012-06-02 CJ E&M 
 ------------------------------------------------------------ */
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
 
-html, body { margin:0; padding:0; font-family:'Oxygen', sans-serif; font-size:12px; -webkit-text-size-adjust:none; color:#251904; line-height:1.4; letter-spacing:-1px; background:#000000; }
+html, body { margin:0; padding:0; font-family:'Droid Sans Mono', monospace; font-size:12px; -webkit-text-size-adjust:none; color:#251904; line-height:1.4; letter-spacing:-1px; background:#000000; }
 
 #WolfharuWatch {
 	position:fixed; left:50%; top:50%; width:300px; height:300px;
@@ -33,32 +33,42 @@ html, body { margin:0; padding:0; font-family:'Oxygen', sans-serif; font-size:12
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-border-radius:50%; border-radius:50%;
 }
-.WolfharuWatchContent strong {
+.WolfharuWatchContent strong.hourHand {
 	position:absolute; content:''; left:50%; top:0; margin-left:-0.8%; padding:30% 0 0 0; width:1.6%; height:50%; display:block; z-index:13;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-transform-origin:center bottom; transform-origin:center bottom;
 	transform:rotate(45deg);
 }
-.WolfharuWatchContent strong i { position:relative; width:100%; height:100%; background-color:#ffffff; display:block; }
+.WolfharuWatchContent strong.hourHand i { position:relative; width:100%; height:100%; background-color:#ffffff; display:block; }
 
-.WolfharuWatchContent em {
+.WolfharuWatchContent em.minuteHand {
 	position:absolute; content:''; left:50%; top:0; margin-left:-0.5%; padding:5% 0 0 0; width:1%; height:50%; display:block; z-index:11;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-transform-origin:center bottom; transform-origin:center bottom;
 }
-.WolfharuWatchContent em i { position:relative; width:100%; height:100%; background-color:#ffffff; display:block; }
+.WolfharuWatchContent em.minuteHand i { position:relative; width:100%; height:100%; background-color:#ffffff; display:block; }
 
-.WolfharuWatchContent span {
+.WolfharuWatchContent span.hourLine {
 	position:absolute; content:''; left:50%; top:0; margin-left:-0.5%; padding:6.27403846125% 0 0 0; width:1%; height:50%; display:block; z-index:13;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-transform-origin:center bottom; transform-origin:center bottom;
 }
-.WolfharuWatchContent span i {
+.WolfharuWatchContent span.hourLine i {
 	position:relative; width:100%; height:10%; background-color:rgba(255,255,255,0.5); display:block;
 }
-.WolfharuWatchContent span:nth-of-type(1) { -webkit-transform:rotate(0deg); transform:rotate(0deg); }
-.WolfharuWatchContent span:nth-of-type(2) { -webkit-transform:rotate(90deg); transform:rotate(90deg); }
-.WolfharuWatchContent span:nth-of-type(3) { -webkit-transform:rotate(180deg); transform:rotate(180deg); }
-.WolfharuWatchContent span:nth-of-type(4) { -webkit-transform:rotate(270deg); transform:rotate(270deg); }
+.WolfharuWatchContent span.hourLine:nth-of-type(1) { -webkit-transform:rotate(0deg); transform:rotate(0deg); }
+.WolfharuWatchContent span.hourLine:nth-of-type(2) { -webkit-transform:rotate(90deg); transform:rotate(90deg); }
+.WolfharuWatchContent span.hourLine:nth-of-type(3) { -webkit-transform:rotate(180deg); transform:rotate(180deg); }
+.WolfharuWatchContent span.hourLine:nth-of-type(4) { -webkit-transform:rotate(270deg); transform:rotate(270deg); }
 
-
+.WolfharuWatchContent span.watchText {
+	position:absolute; left:50%; top:50%; padding:0 10px; line-height:22px; text-align:center; background:rgba(0,0,0,1); display:block; z-index:21;
+	-webkit-transform:translate3d(-50%,-50%,0); transform:translate3d(-50%,-50%,0);
+}
+.WolfharuWatchContent span.watchText em {
+	font-size:16px; color:rgba(255,255,255,0.5); font-style:normal; line-height:22px;
+}
+.WolfharuWatchContent span.watchText i {
+	font-size:16px; color:rgba(255,255,255,0.5); font-style:normal; line-height:22px;
+}
+.WolfharuWatchContent span.watchText em:nth-of-type(1) { font-size:12px; }
