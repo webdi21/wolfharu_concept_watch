@@ -22,34 +22,26 @@ html, body { margin:0; padding:0; font-family:'Oxygen', sans-serif; font-size:12
 	-webkit-transform:translate3d(-50%,-50%,0); transform:translate3d(-50%,-50%,0);
 }
 .WolfharuWatchContent:after {
-	position:absolute; content:''; left:50%; top:50%; width:66.92307692%; height:66.92307692%; background-color:#e0e3e8; z-index:1;
+	position:absolute; content:''; left:50%; top:50%; width:66.92307692%; height:66.92307692%; background-color:#e0e3e8; display:block; z-index:1;
 	-webkit-border-radius:50%; border-radius:50%;
 	box-shadow:0 15px 25px -4px rgba(0, 0, 0, 0.25), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.05), 0 -10px 15px -1px rgba(255, 255, 255, 0.3), inset 0 3px 4px -1px rgba(255, 255, 255, 0.05), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
 	-webkit-transform:translate3d(-50%,-50%,0); transform:translate3d(-50%,-50%,0);
 }
-/* .WolfharuWatchContent:before {
-	position:absolute; content:'wolfharu'; right:20%; top:50%; width:60%; font-size:16px; font-weight:bold; color:#c5cad0; line-height:20px; text-align:right; display:block; z-index:2;
+.WolfharuWatchContent:before {
+	position:absolute; content:''; left:50%; top:50%; margin:-4% 0 0 -4%;  width:8%; height:8%; background-color:#e0e3e8; border:3px solid #07d2ff; display:block; z-index:4;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
-	-webkit-transform:translate3d(0,-50%,0); transform:translate3d(0,-50%,0);
-} */
+	-webkit-border-radius:50%; border-radius:50%;
+}
 .WolfharuWatchContent strong {
-	position:absolute; content:''; left:50%; top:0; margin-left:-2px; padding:30% 0 0 0; width:4px; height:50%; display:block; z-index:3;
+	position:absolute; content:''; left:50%; top:0; margin-left:-0.8%; padding:30% 0 0 0; width:1.6%; height:50%; display:block; z-index:3;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-transform-origin:center bottom; transform-origin:center bottom;
 	transform:rotate(45deg);
 }
 .WolfharuWatchContent strong i { position:relative; width:100%; height:100%; background-color:#07d2ff; display:block; }
-.WolfharuWatchContent strong i:before {
-	position:absolute; content:''; left:-4px; bottom:-4px;  width:12px; height:12px; background-color:#07d2ff; display:block;
-	-webkit-border-radius:50%; border-radius:50%;
-}
-.WolfharuWatchContent strong i:after {
-	position:absolute; content:''; left:-2px; bottom:-2px;  width:8px; height:8px; background-color:#e0e3e8; display:block;
-	-webkit-border-radius:50%; border-radius:50%;
-}
 
 .WolfharuWatchContent em {
-	position:absolute; content:''; left:50%; top:0; margin-left:-1px; padding:0 0 0 0; width:2px; height:50%; display:block; z-index:1;
+	position:absolute; content:''; left:50%; top:0; margin-left:-0.5%; padding:5% 0 0 0; width:1%; height:50%; display:block; z-index:1;
 	-webkit-box-sizing:border-box; box-sizing:border-box;
 	-webkit-transform-origin:center bottom; transform-origin:center bottom;
 }

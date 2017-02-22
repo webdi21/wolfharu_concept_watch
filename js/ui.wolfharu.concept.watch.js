@@ -15,8 +15,8 @@ $(function() {
 
 		console.log(now.hours, now.minutes, now.seconds);
 
-		angel.minutes = (360*now.minutes)/60;
-		angel.hours = (360*now.hours)/12 + angel.minutes/60;
+		angel.minutes = (360*now.minutes)/60 + now.seconds/10;
+		angel.hours = (360*now.hours)/12 + now.minutes/2;
 
 		$('#WolfharuWatch strong').css({'transform':'rotate('+angel.hours+'deg)'});
 		$('#WolfharuWatch em').css({'transform':'rotate('+angel.minutes+'deg)'});
