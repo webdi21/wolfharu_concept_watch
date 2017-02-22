@@ -1,4 +1,16 @@
 $(function() {
+	var $el = $('#WolfharuWatch');
+	var tempHtml = '', $hourHand, $minuteHand;
+	tempHtml += '<div class="WolfharuWatchInner">';
+	tempHtml += '	<div class="WolfharuWatchContent">';
+	tempHtml += '		<strong><i></i></strong>';
+	tempHtml += '		<em><i></i></em>';
+	tempHtml += '	</div>';
+	tempHtml += '</div>';
+	
+	$el.append(tempHtml);
+	$hourHand = $el.find('strong');
+	$minuteHand = $el.find('em');
 	
 	function fnWolfharuWatch() {
 		var currentTime = new Date();
@@ -18,8 +30,8 @@ $(function() {
 		angel.minutes = (360*now.minutes)/60 + now.seconds/10;
 		angel.hours = (360*now.hours)/12 + now.minutes/2;
 
-		$('#WolfharuWatch strong').css({'transform':'rotate('+angel.hours+'deg)'});
-		$('#WolfharuWatch em').css({'transform':'rotate('+angel.minutes+'deg)'});
+		$hourHand.css({'transform':'rotate('+angel.hours+'deg)'});
+		$minuteHand.css({'transform':'rotate('+angel.minutes+'deg)'});
 	}
 
 	 fnWolfharuWatch();
